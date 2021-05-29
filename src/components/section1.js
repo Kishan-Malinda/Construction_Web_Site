@@ -4,19 +4,19 @@ import government_project from "../assets/Picture7.jpg";
 
 const section1 = () => {
     return (
-        <section class="section-1 p-5">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="pray">
+        <section className="section-1 p-5">
+        <div className="container text-center">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="pray">
                 <img src={government_project} alt="Succussful_projects" width="550"/>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="panel text-left">
+            <div className="col-md-6">
+              <div className="panel text-left">
                 <h1>Government Hospital Project</h1>
-                <h4 class="pt-1">Present Successful Project...</h4>
-                <p class="pt-3">
+                <h4 className="pt-1">Present Successful Project...</h4>
+                <p className="pt-3">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga quibusdam omnis voluptates
                    necessitatibus beatae voluptatibus alias mollitia, minima culpa magnam quos, consequuntur 
                    dolores recusandae eaque nam cum unde adipisci obcaecati? Lorem ipsum, dolor sit amet consectetur

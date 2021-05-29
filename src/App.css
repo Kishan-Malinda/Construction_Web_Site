@@ -7,6 +7,7 @@
     
     section, header{
         overflow-x: hidden;     /*hide left and right spaces from header and section*/
+        
     }
     
     :root{
@@ -30,10 +31,17 @@
     header{
         background: #dd2476;
         background: var(--bggradient);
+        
     }
-    
+    header .container .col-md-7 button{
+      z-index: 1;
+    }
     .dropdown-menu a:hover{
         background: #ddd;
+    }
+
+    .navbar{
+      z-index: 2;
     }
     
     
@@ -79,11 +87,20 @@
     header .container .col-md-7 .sign_log_in{
         padding: 0;
         font-size: 2.4vmin;
+        
     } 
     
     header .container .col-md-5 img{
         border-radius: 10px;
         width : 573px;
+    }
+
+    header .container .col-md-5 .typed-text{
+      font-family: var(--Rubik);
+      font-size: 2rem;
+      color: whitesmoke;
+      margin: 5vmin auto;
+      font-weight: bolder;
     }
     
     header .container .col-md-7 button{
@@ -91,6 +108,13 @@
         font-weight: bold;
         margin:  auto 5vmin;
     } 
+    /*particles "header .tsparticles-canvas-el"*/
+    .tsparticles-canvas-el{
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      z-index: 1;
+    }
 
     /*Section1*/
 .section-1{
@@ -248,3 +272,177 @@
   padding: 2vmin 4vmin ;
   margin: 1em;
 }
+
+/*section4 */
+
+.section-4 .container h1{
+  font-size: 6vmin;
+  padding-top: 10vmin;
+}
+.section-4 .container p{
+  font-size: 3.5vmin;
+  
+}
+
+.section-4 .team{
+  padding: 6vmin 5vmin;
+  
+}
+
+.section-4 .card{
+  width: 25rem;
+  
+}
+.section-4 .card .card-text{
+  padding: 0.5em;
+  font-size: 2.5vmin;
+}
+
+.section-4 .card .card-body>a{
+  font-size: 1.25em;
+}
+
+.section-4 .carousel-item{
+  padding-left: 3rem;
+}
+
+.border-radius{
+  border-radius: 250px;
+  width: 75%;
+}
+
+/*footer*/
+
+footer{
+  background: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+}
+footer input{
+  border: none !important;
+}
+
+footer input::placeholder{
+  color: aliceblue !important;
+}
+
+footer .column i{
+  color: #fd085a;
+}
+footer .column i+i{
+  padding: 0 0.5em;
+}
+
+
+/*Sticky navibar */
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, .8250);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+
+
+/* Mobile Responsiveness */
+
+@media only screen and (max-width: 768px) {
+  header .navbar-brand{
+      padding-left: 1rem;
+  }
+
+  header .container .col-md-5>img{
+      width: inherit;
+  }
+  .section-1 .row .col-md-6 .panel{
+      position: initial;
+      width: initial;
+      height: initial;
+  }
+  .section-1 .container .row .col-md-6 .pray>img{
+      width: 20rem;
+     
+  }
+
+  
+  .section-2 .cover{
+      background-position: -25vmin -10vmin;
+  }
+  
+  .numbers .rect{
+      width: 10rem ;
+      height : 8rem;
+  }
+  .numbers .rect >h1{
+      font-size: 2rem;
+  }
+  .section-3{
+      height: inherit;
+      padding : 10vmin !important;
+  }
+  .section-3 .row>h2{
+      padding: 6vmin 4vmin;
+  }
+  .section-3 .row .col-md-6{
+      text-align: center !important;
+  }
+  .section-4 .carousel-item{
+      padding-left: 0.6rem;
+  }
+  .section-4 .team{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+  }
+  .section-4 .carousel-inner .card {
+      width: 15.5rem;
+  }
+  header .container .col-md-5 .typed-text{
+    font-size: 1.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 425px){
+  footer .row .col-md-2{
+      margin-bottom: 8vmin;
+  }
+  .section-1 .container .row .col-md-6 .pray>img{
+      width: 18rem;
+     
+  }
+  header .container .col-md-5 .typed-text{
+    font-size: 1.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 320px){
+  
+  .section-1 .container .row .col-md-6 .pray>img{
+      width: 15rem;
+     
+  }
+  
+  .section-4 .carousel-item .card{
+      margin-left: -24vmin;
+      
+  }
+  .section-4 .team{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      
+  }
+  .section-4 .card{
+      width: 20rem;
+  }
+  .section-4 .carousel-inner{
+      width: 25rem;
+  }
+  header .container .col-md-5 .typed-text{
+    font-size: 1.5rem;
+  }
+}
+

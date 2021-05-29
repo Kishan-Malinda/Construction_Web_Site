@@ -1,9 +1,13 @@
 import React from 'react';
 import construction_site from '../assets/Picture5.jpg';
+import Typed from "react-typed";
+
 
 const Navbar = () => {
     return (
+               
         <header>
+            
             <div className="container-fluid p-0">
                 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                     <a className="navbar-brand" href="#"> <i className="fas fa-building fa-2x mx-3"></i>Ultra Construction (pvt) Ltd.</a>
@@ -56,16 +60,27 @@ const Navbar = () => {
                         <button className="btn btn-dark bg-info px-5 py-2">LOG IN</button><br/>
                         <p className="sign_log_in ">If you already have an account, LOG IN</p>
                         <p className="sign_log_in ">You don't have Account, SIGN IN</p>
+                        
                     </div>
                     <div className="col-md-5 col-sm-12">
                         <img src={construction_site} alt="Contruction_Site" />
 
-                        <h3>This is a project</h3>
+                        <div className="typed-text" >
+                                <Typed 
+                                    strings ={["Buildings","Roads","Gardens","Bridges"]}
+                                    typeSpeed={40}
+                                    backSpeed={50}
+                                    loop
+                                />
+                        </div>
+                        
+
                     </div>
                 </div>
             </div>
 
         </header>
+        
     )
 }
 
