@@ -59,6 +59,8 @@ const Navbar = () => {
                     </div>
                     <div className="col-md-5 col-sm-12">
                         <img src={construction_site} alt="Contruction_Site" />
+
+                        <h3>This is a project</h3>
                     </div>
                 </div>
             </div>

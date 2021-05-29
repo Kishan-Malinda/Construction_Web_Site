@@ -91,4 +91,160 @@
         font-weight: bold;
         margin:  auto 5vmin;
     } 
-    
+
+    /*Section1*/
+.section-1{
+  padding :  20vmin 0vmin;
+}
+
+.section-1 .row .col-md-6 .pray img{
+  opacity: 0.8;
+  border-radius: 15px;
+}
+
+.section-1 .row .col-md-6:last-child{
+  position: relative;
+}
+
+.section-1 .row .col-md-6 .panel{
+  position: absolute;
+  top: 5vmin;
+  left: -8vmin;
+  background: white;
+  border-radius: 5px;
+  text-align: left;
+  padding : 5vmin 5vmin 5vmin 8vmin;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+  font-family: var(--Rubik);
+  z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1{
+  font-weight:bold
+}
+
+.section-1 .row .col-md-6 .panel p{
+  font-size: 1em;
+  color:rgba(0, 0, 0, 0.75);
+}
+
+/*section2*/
+
+.cover{
+  width:100%;
+  height: 55vmin;
+  background: url(./assets/Picture3.jpg);
+  background-position: -25rem -20rem;
+  background-size: 75%;
+  position: relative;
+}
+
+.cover .content{
+  background: rgba(0, 0, 0, 0.6);
+  height:100%;
+  width: 100%;
+  padding-top: 7rem;
+}
+
+.cover .content > h1{
+  font-family: var(--Patua);
+  color: whitesmoke;
+  font-size: 6vmin;
+}
+
+.cover .content > p{
+  font-family: var(--Rubik);
+  color: aliceblue;
+  padding-top: 2vmin;
+  font-size: 3vmin;
+}
+
+.numbers .rect{
+  position: relative;
+  z-index: 1;
+  background-color: antiquewhite;
+  width: 15rem;
+  height: 10rem;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px  rgba(255, 0, 0, 0.3);
+}
+
+.numbers{
+  margin-top: -8vmin;   
+}
+.numbers h1{
+  font-size: 55px;
+  color: #ff512f;
+}
+
+.purchase > h2{
+  padding-top: 12vmin;
+  padding-bottom: 1.5vmin;
+  font-family: var(--Lobster);
+
+}
+
+.purchase > p{
+  color: var(--light-black);
+  font-size: 20px;
+  padding-bottom: 5vmin;
+}
+
+.purchase .cards .card{
+  width: 25rem;
+  margin: 3vmin;
+}
+
+.cards div{
+  margin: 0;
+  padding: 0;
+}
+.cards .title{
+  background : aquamarine ;
+  padding: 1.5rem 2.5rem;
+  font-size: 3.5vmin;
+}
+
+.card .card-text{
+  padding:2.5rem 2rem;
+  color:gray;
+  font-size: 3vmin;
+}
+
+.card .pricing{
+  background: rgba(125,255, 215, 0.25) ;
+  border-top-right-radius: 180px;
+  border-top-left-radius: 180px;
+}
+
+/*Section-3*/
+
+.section-3{
+  height: 65vmin;
+  margin-top: 10vmin;
+  background: var(--bggradient);
+}
+
+.section-3 .col-md-12>h2{
+  padding: 1.5em 0em;
+  color: antiquewhite;
+  font-size: 6vmin;
+}
+
+.section-3 .col-md-12>p {
+  padding: 0em 1.5em;
+  padding-bottom: 0.75em;
+  color: bisque;
+  font-size: 3vmin;
+  
+}
+
+.section-3 .desktop{
+  background: white;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 2vmin 4vmin ;
+  margin: 1em;
+}
