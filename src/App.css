@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
+    /*google fonts*/
+    @import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Patua+One&family=Rubik:wght@300&family=Sniglet&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    *{
+        box-sizing: border-box;
+    }
+    
+    section, header{
+        overflow-x: hidden;     /*hide left and right spaces from header and section*/
+    }
+    
+    :root{
+        --Snigle-font: "Sniglet",cursive;
+        --Rubik: "Rubik", cursive;
+        --Patua: "Patua One",cursive;
+        --Lobster: "Lobster", cursive;
+        --light-black: #2e2c2acf;
+        --bggradient : linear-gradient(
+            to bottom, 
+            #dd2476, #ff512f );
+        --light-gray: rgba(255,255,255,0); 
+    }
+    
+    header a{
+        font-family: var(--Snigle-font);
+        font-size: 0.9em;
+        color:whitesmoke;
+    }
+    
+    header{
+        background: #dd2476;
+        background: var(--bggradient);
+    }
+    
+    .dropdown-menu a:hover{
+        background: #ddd;
+    }
+    
+    
+    header .nav-item{
+        padding: 0em 1.5em;
+        font-size: 1.2em;
+    }
+    header .navbar-brand{
+        padding-left: 8em;
+    }
+    header .nav-link:hover{
+        color: black;
+    }
+    
+    header .row .col-md-5{
+        padding: 4.2vmin 1vmin;
+    }
+    
+    header .row .col-md-7{
+        padding : 22vmin 1vimn;
+        padding-bottom: 10vmin;
+        font-family: var(--Rubik);
+        color: white;
+    } 
+    
+    header .container .col-md-7 h3{
+        padding : 1vmin;
+        letter-spacing: 4px;
+        font-weight: bold;
+    } 
+    
+    header .container .col-md-7 h1{
+        padding : 0.1em 0em;
+        font-size: 8vmin;
+        font-weight: bold;
+    } 
+    
+    header .container .col-md-7 p{
+        padding : 1vmin 5vmin;
+        font-size: 2.8vmin;
+    } 
+    
+    header .container .col-md-7 .sign_log_in{
+        padding: 0;
+        font-size: 2.4vmin;
+    } 
+    
+    header .container .col-md-5 img{
+        border-radius: 10px;
+        width : 573px;
+    }
+    
+    header .container .col-md-7 button{
+        border-radius: 25px;
+        font-weight: bold;
+        margin:  auto 5vmin;
+    } 
+    
