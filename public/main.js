@@ -1,3 +1,18 @@
+
+let navbar = $(".navbar");
+
+$(window).scroll(function(){
+    let oTop = $(".section-2").offset().top - window.innerHeight;
+    console.log(oTop);
+
+    if($(window).scrollTop() > oTop){
+        navbar.addClass("sticky");
+    }else{
+        navbar.removeClass("sticky");
+    }   
+
+})
+
 //counter animation
 
 let nCount = function(selector){
@@ -12,7 +27,7 @@ let nCount = function(selector){
             }
         })
     });
-}
+};
 
 let a=0;
 $(window).scroll(function(){
