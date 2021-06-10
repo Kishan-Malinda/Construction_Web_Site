@@ -8,6 +8,7 @@ import Section3 from "./components/section3";
 import Section4 from "./components/section4";
 import Particles from  "react-particles-js";
 import Footer from "./components/footer";
+
 function App() {
   return (
 
